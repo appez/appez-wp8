@@ -1,10 +1,2 @@
 language: csharp
 solution: appez.sln
-env:
-  global:
-    - EnableNuGetPackageRestore=true
-sudo: true
-before_install:
-  - export EnableNuGetPackageRestore=true
-script:
-  - xbuild /p:Configuration=Release appez.sln
